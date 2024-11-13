@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>Joker's Food</title>
+</head>
+<body>
+    <!-- HEADER-->
+    
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="assets/logo.jpeg" alt="" class="w-40 h-40 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">Joker's Food</h1>
+
+            <span class="text-white font-medium">Vilar dos Teles, São João de Meriti - RJ</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white">Ter á Dom - 10:00 às 15:30 </span>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    <!-- FIM DO HEADER-->
+
+   
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso cardápio</h2>
+
+     <!-- MENU-->
+      <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!-- ITENS DO MENU-->
+            <div class="flex gap-2">
+                <img src="./assets/ba.png" alt=""
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+
+                    <p class="font-bold">Bife Acebolado</p>
+                    <p class="text-sm">Delicioso bife acebolado com fritas, servido com Arroz, Feijão e Farofa.</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold">R$ 15,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            
+                            
+                            data-name="Bife Acebolado"
+                            data-price="15,00"    >
+                                
+                                
+                                <i class="fa fa-cart-plus text-lg text-white">
+
+
+                            </i></button>
+                        </div>
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO-->
+            <!-- PRODUTO 2-->
+            <div class="flex gap-2">
+                <img src="./assets/bm.jpg" alt=""
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+
+                    <p class="font-bold">Bife a Milanesa</p>
+                    <p class="text-sm">Bife a Milanesa acompanhado com Fritas, Arroz, Feijão e Farofa.</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold">R$ 15,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            
+                            
+                            data-name="Bife a Milanesa"
+                            data-price="15,00"    >
+                                
+                                
+                                <i class="fa fa-cart-plus text-lg text-white">
+
+
+                            </i></button>
+                        </div>
+                </div>
+
+            </div>
+
+            <!-- PRODUTO 3-->
+            <div class="flex gap-2 hidden">
+                <img src="./assets/pf.jpg" alt=""
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+
+                    <p class="font-bold">Peixe Frito</p>
+                    <p class="text-sm">Peixe Frito acompanhado com Fritas, Arroz, Feijão.</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold">R$ 15,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            
+                            
+                            data-name="Peixe Frito"
+                            data-price="15,00"    >
+                                
+                                
+                                <i class="fa fa-cart-plus text-lg text-white">
+
+
+                            </i></button>
+                        </div>
+                </div>
+
+            </div>
+            
+            <!-- PRODUTO 4-->
+            <div class="flex gap-2">
+                <img src="./assets/pcf.jpg" alt=""
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+
+                    <p class="font-bold">Picadinho de Filé de Peito</p>
+                    <p class="text-sm">Frango Picado acompanhado com Fritas, Arroz, Feijão e Farofa.</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold">R$ 14,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            
+                            
+                            data-name="Picadinho de Frango"
+                            data-price="14,00"    >
+                                
+                                
+                                <i class="fa fa-cart-plus text-lg text-white">
+
+
+                            </i></button>
+                        </div>
+                </div>
+
+            </div>
+            <!-- PRODUTO 5 -->
+            <div class="flex gap-2">
+                <img src="./assets/fg.jpg" alt=""
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+
+                    <p class="font-bold">Frango Grelhado</p>
+                    <p class="text-sm">Filé de Frango Grelhado acompanhado com Fritas, Arroz, Feijão e Farofa.</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold">R$ 14,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            
+                            
+                            data-name="Frango Grelhado"
+                            data-price="14,00"    >
+                                
+                                
+                                <i class="fa fa-cart-plus text-lg text-white">
+
+
+                            </i></button>
+                        </div>
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO-->
+            <!-- PRODUTO 2-->
+            <div class="flex gap-2">
+                <img src="./assets/fm.jpg" alt=""
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+
+                    <p class="font-bold">Frango a Milanesa</p>
+                    <p class="text-sm">Frango a Milanesa acompanhado com Fritas, Arroz, Feijão e Farofa.</p>
+
+
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold">R$ 15,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            
+                            
+                            data-name="Frango a Milanesa"
+                            data-price="14,00"    >
+                                
+                                
+                                <i class="fa fa-cart-plus text-lg text-white">
+
+
+                            </i></button>
+                        </div>
+                </div>
+
+            </div>
+<!-- PRODUTO 2-->
+<div class="flex gap-2">
+    <img src="./assets/mc.jpg" alt=""
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+    <div>
+
+        <p class="font-bold">Macarrão C/ Linguiça</p>
+        <p class="text-sm">Macarrão C/ Linguiça acompanhada com Arroz, Feijão e Farofa.</p>
+
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold">R$ 11,00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                
+                
+                data-name="Macarrão C/ Linguiça"
+                data-price="11,00"    >
+                    
+                    
+                    <i class="fa fa-cart-plus text-lg text-white">
+
+
+                </i></button>
+            </div>
+    </div>
+
+</div>
+        </main>
+<!-- GRID BEBIDAS -->
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Bebidas</h2>
+        </div>
+
+        
+         
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <div class="flex gap-2 w-full">
+                <img src="./assets/guaravita.png" alt=""
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+                <div>
+            
+                    <p class="font-bold">Guaravita 290ml</p>
+                    
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold">R$ 2,00</p>
+                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+                            
+                            
+                            data-name="Guaravita"
+                            data-price="2.00"    >
+                                
+                                
+                                <i class="fa fa-cart-plus text-lg text-white">
+            
+            
+                            </i></button>
+                        </div>
+                </div>
+
+
+
+
+        </div>
+      </div>
+      <!-- MODAL CARD-->
+      <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center overflow-y-auto hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md  w-full lg:w-[400px] mx-auto overflow-y-auto sm:w-[60%] max-w-[90%] max-h-[80vh]">
+            
+            <h2 class="text-black text-center font-bold text-xl flex items-center justify-center sm:text-2xl mb-4 mt-4">Meu Carrinho</h2>
+            <div id="cart-items" class="flex-1 overflow-y-auto justify-between mb-2 flex-col  "></div>
+
+            <p class="font-bold text-black">Total: <span id="cart-total">0.00</span></p>
+        <!-- INPUT DE ENDEREÇO DE ENTREGA! -->
+         
+            <p class="font-bold text-black mt-4" required>Nome </p>
+            <input 
+            type="text"
+            placeholder="Digite seu Nome"
+            id="pessoa"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+
+            <p class="font-bold text-black mt-4" required>CEP: </p>
+            <input 
+            type="text"
+            placeholder="Digite seu CEP"
+            id="cep"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+        
+            <p class="font-bold text-black mt-4">Rua: </p>
+            <input type="text"
+            placeholder="Digite seu Endereço Completo"
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+            <p class="text-red-500 hidden" id="address-warn">Digite seu Endereço Completo!</p>
+
+            <p class="font-bold text-black mt-4">Número/Lote: </p>
+            <input 
+            type="text"
+            placeholder="Número"
+            id="numero"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+
+            <p class="font-bold text-black mt-4">Bairro:</p>
+            <input 
+            type="text"
+            placeholder="Bairro"
+            id="bairro"
+            class="w-full border-2 p-1 rounded my-1"
+            />
+
+
+            
+            <p class="font-bold text-black mt-4">Forma de Pagamento</p>
+            <select id="payment" class="flex justify-center items-center w-full border-2 p-1 rounded my-1 ">
+                <option value="">Selecione</option>
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Pix">PIX</option>
+                <option value="Cartão">Cartão</option>
+            </select>
+            
+            <!-- Campo de troco, oculto inicialmente -->
+            <div id="change-container" class="hidden">
+                <p class="font-bold text-black mt-4">Vai precisar de troco?
+                 Digite o Valor que vai pagar em dinheiro, para que o entregador leve o troco.</p>
+                R$<input type="number" id="troco-valor" placeholder="Valor" class="w-full border-2 p-1 rounded my-1" />
+            </div>
+            
+            <p class="font-bold text-black mt-4"> ***O valor da Taxa de Entrega será calculado após o envio do Pedido***</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+
+
+            </div>
+
+
+      </div>
+    </div> 
+
+
+      <!--CART FOOTER-->
+
+      <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+
+        <button class="flex items-center gap-2 text-white font-bold " id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+
+
+      </footer>
+
+      <script src="script.js"></script>
+</body>
+</html>
